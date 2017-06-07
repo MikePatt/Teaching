@@ -7,7 +7,7 @@ ans = True
 while ans:
     question = raw_input("Ask the magic 8 ball a question: (press enter to quit) ")
     
-    answers = random.randint(1,8)
+    answers = random.randint(1,9)
     
     if question == "":
         sys.exit()
