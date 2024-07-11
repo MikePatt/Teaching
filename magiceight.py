@@ -1,40 +1,16 @@
 # Import the modules
-import sys
 import random
 
-ans = True
+answers = ["It is certain","Outlook good","You may rely on it","Ask again later","Concentrate and ask again", 
+"Reply hazy, try again","My reply is no","My sources say no","Ask again soon"]
 
-while ans:
-    question = raw_input("Ask the magic 8 ball a question: (press enter to quit) ")
-    
-    answers = random.randint(1,9)
+while True:
+    question = input("Ask the magic 8 ball a question: (press enter to quit) ")
     
     if question == "":
-        sys.exit()
+        print("GoodBye!")
+        break
     
-    elif answers == 1:
-        print ("It is certain")
+    print(random.choice(answers))
     
-    elif answers == 2:
-        print ("Outlook good")
     
-    elif answers == 3:
-        print ("You may rely on it")
-    
-    elif answers == 4:
-        print ("Ask again later")
-    
-    elif answers == 5:
-        print ("Concentrate and ask again")
-    
-    elif answers == 6:
-        print ("Reply hazy, try again")
-    
-    elif answers == 7:
-        print ("My reply is no")
-    
-    elif answers == 8:
-        print ("My sources say no")
-        
-    elif answers == 9:
-        print ("Ask again soon")
